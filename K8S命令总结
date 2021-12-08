@@ -1,0 +1,11 @@
+kubectl describe svc {svc名称}|grep NodePort 
+命令作用：查看svc所对应的端口
+
+kubectl describe pods/{pod名称} --namespace {命名空间} 
+命令作用：查看对应命名空间的pod
+
+kubectl delete pod {pod名称} --namespace {命名空间} 
+命令作用：删除对应的pod
+
+kubectl logs {pod名称} --namespace {命名空间} 
+命令作用：查看对应命名空间的pod的日志
