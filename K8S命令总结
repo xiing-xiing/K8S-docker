@@ -9,3 +9,6 @@ kubectl delete pod {pod名称} --namespace {命名空间}
 
 kubectl logs {pod名称} --namespace {命名空间} 
 命令作用：查看对应命名空间的pod的日志
+
+kubectl exec -ti {pod名称} -n {命名空间} -- sh
+命令作用：进入pod
