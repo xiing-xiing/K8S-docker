@@ -15,3 +15,6 @@ kubectl exec -ti {pod名称} -n {命名空间} -- sh
 
 kubectl get ns
 命令作用：查看namespace
+
+kubectl  get pods -n {命名空间} -o wide
+命令作用：查看pods
