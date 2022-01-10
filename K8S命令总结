@@ -12,3 +12,6 @@ kubectl logs {pod名称} --namespace {命名空间}
 
 kubectl exec -ti {pod名称} -n {命名空间} -- sh
 命令作用：进入pod
+
+kubectl get ns
+命令作用：查看namespace
