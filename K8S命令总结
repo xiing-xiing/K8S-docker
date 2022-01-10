@@ -18,3 +18,6 @@ kubectl get ns
 
 kubectl  get pods -n {命名空间} -o wide
 命令作用：查看pods
+
+kubectl get pods -o wide --all-namespaces
+命令作用：查看所有pod
