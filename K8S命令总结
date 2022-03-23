@@ -21,3 +21,6 @@ kubectl  get pods -n {命名空间} -o wide
 
 kubectl get pods -o wide --all-namespaces
 命令作用：查看所有pod
+
+kubectl  get  svc -n{命名空间} u-{组件名称}  -oyaml
+命令左右：查看yaml文件
