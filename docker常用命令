@@ -14,3 +14,6 @@ docker network ls 查看网络列表
 
 ocker run -d（后台运行） -p （端口映射） --name （容器名字） 
 
+docker network create {网络名称}
+
+docker run -d --name {容器} --network {网络名称} --network-alias {别名} 
