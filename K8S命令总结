@@ -52,3 +52,6 @@ kubectl rollout undo deployment {deployment名称}
 
 # 回到指定版本
 kubectl rollout undo deployment {deployment名称} --to-revision=2
+
+#编辑yaml文件
+kubectl edit  DaemonSet {pod名称} -n {命名空间}
