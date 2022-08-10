@@ -55,3 +55,9 @@ kubectl rollout undo deployment {deployment名称} --to-revision=2
 
 #编辑yaml文件
 kubectl edit  DaemonSet {pod名称} -n {命名空间}
+
+#找到所有的容器镜像
+kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].image}" |\
+tr -s '[[:space:]]' '\n' |\
+sort |\
+uniq -c
