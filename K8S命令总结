@@ -61,3 +61,9 @@ kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].ima
 tr -s '[[:space:]]' '\n' |\
 sort |\
 uniq -c
+
+#k8s查看etcd所在的pod
+kubectl get pod -n kube-system | grep etcd
+
+#k8s查看apiserver
+kubectl get pod -n kube-system |grep apiserver
