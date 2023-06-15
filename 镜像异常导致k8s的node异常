@@ -1,0 +1,5 @@
+用此命令查看异常的镜像，卡在哪里就是哪个镜像有异常：
+for c in $(docker ps -aq); do echo $c; docker inspect $c 1>/dev/null 2>&1; done
+
+删除异常镜像：
+ps aux|grep containerd-shim|grep 0cd37f7bf933 | xargs kill -9
