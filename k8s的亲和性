@@ -1,0 +1,3 @@
+查看node节点的labels
+ kubectl get nodes --show-labels
+
